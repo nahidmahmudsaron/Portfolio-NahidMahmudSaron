@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahid Mahmud Saron • Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="sprogress" style="width:0"></div>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-logo">Nahid Mahmud Saron</div>
+    <div class="loader-track">
+      <div class="loader-fill" id="lf"></div>
+    </div>
+    <div class="loader-pct" id="lpct">0%</div>
+    <div class="loader-dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- Orbs -->
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="orb orb-c"></div>
+
+  <!-- Starfield canvas -->
+  <canvas id="cvs"></canvas>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <div class="nav-logo"><em>//</em> NMS</div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section id="hero">
+    <div class="hero-inner" style="position:relative;flex:1;">
+
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Available for opportunities</span>
+      </div>
+
+      <div class="hero-name-wrap">
+        <div class="hero-name">
+          <span class="word word-1">Nahid&nbsp;</span><span class="word word-2">Mahmud&nbsp;</span><span
+            class="word word-3">Saron</span>
+        </div>
+      </div>
+
+      <div
+        style="font-size:clamp(1rem,2vw,1.4rem);color:var(--muted);font-weight:300;letter-spacing:-.3px;margin-bottom:24px;opacity:0;animation:riseIn .7s .9s forwards;">
+        Android Application Developer &nbsp;·&nbsp; Dhaka, Bangladesh
+      </div>
+
+      <div class="hero-tw-row">
+        <span class="tw-prefix">&gt;&nbsp;</span>
+        <span id="twText"></span>
+        <span class="tw-cur"></span>
+      </div>
+
+      <p class="hero-sub">
+        Driven by a passion for writing clean code and creating intuitive, practical mobile apps. Instead of following
+        the traditional 9-to-5 career path, my true vision is to build high-impact startups and venture into tech
+        entrepreneurship—fueled by the freedom of a digital nomad lifestyle, InshaAllah.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-mag btn-mag-primary">View Projects &darr;</a>
+        <a href="#contact" class="btn-mag btn-mag-ghost">Get in Touch</a>
+      </div>
+
+      <div class="scroll-hint">
+        <span class="sh-dot"></span>
+        <span class="sh-line"></span>
+        Scroll to explore
+      </div>
+
+      <!-- Right floating pills -->
+      <div class="hero-pills">
+        <div class="pill">📱 Android · Java · XML</div>
+        <div class="pill">⚡ Volley · Glide · Picasso · Lottie</div>
+        <div class="pill">💻 Android Studio · VS Code</div>
+        <div class="pill">🐙 Git · GitHub</div>
+        <div class="pill">🗄️ C · PHP · MySQL</div>
+        <div class="pill">🌐 HTML · CSS</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ STATS ══════════════════ -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><span class="stat-num" data-to="10">0</span><span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-cell"><span class="stat-num" data-to="3">0</span><span class="stat-label">Languages</span></div>
+      <div class="stat-cell"><span class="stat-num" data-to="500">0</span><span class="stat-label">Hours Coded</span>
+      </div>
+      <div class="stat-cell"><span class="stat-num" data-to="100">0</span><span class="stat-label">% Passionate</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <!-- ══════════════════ SKILLS ══════════════════ -->
+  <div class="skills-sec reveal" id="skills">
+    <p class="sec-label">What I work with</p>
+    <h2 class="sec-title">Skills & Tools</h2>
+    <div class="skills-grid">
+
+      <div class="sk-card">
+        <div class="sk-card-glow"></div>
+        <div class="sk-icon">📱</div>
+        <div class="sk-name">Android Development</div>
+        <div class="sk-desc">Building native Android apps with Java and XML, from UI design to backend integration using
+          Volley.</div>
+        <div class="sk-tags">
+          <span class="tag">Java</span><span class="tag">XML</span><span class="tag">Volley</span><span
+            class="tag">Glide</span><span class="tag">Picasso</span><span class="tag">Lottie</span>
+        </div>
+      </div>
+
+      <div class="sk-card" style="animation-delay:.1s">
+        <div class="sk-card-glow"></div>
+        <div class="sk-icon">🌐</div>
+        <div class="sk-name">Web Development</div>
+        <div class="sk-desc">Creating responsive and structured web interfaces with HTML and CSS.</div>
+        <div class="sk-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+      </div>
+
+      <div class="sk-card" style="animation-delay:.2s">
+        <div class="sk-card-glow"></div>
+        <div class="sk-icon">🛠️</div>
+        <div class="sk-name">Backend & Tools</div>
+        <div class="sk-desc">Setting up PHP backends with JSON APIs, MySQL databases, and local dev environments using
+          XAMPP.</div>
+        <div class="sk-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">XAMPP</span><span class="tag">JSON
+            API</span>
+        </div>
+      </div>
+
+      <div class="sk-card" style="animation-delay:.3s">
+        <div class="sk-card-glow"></div>
+        <div class="sk-icon">⚙️</div>
+        <div class="sk-name">Dev Workflow</div>
+        <div class="sk-desc">Version control with Git and GitHub, Android Studio as primary IDE, and Netlify for quick
+          web deployment.</div>
+        <div class="sk-tags">
+          <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Android Studio</span><span
+            class="tag">Netlify</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <!-- ══════════════════ PROJECTS ══════════════════ -->
+  <div class="proj-sec reveal" id="projects">
+    <p class="sec-label">Things I've built</p>
+    <h2 class="sec-title">Projects</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card wide">
+        <div class="proj-thumb wide t-wide">
+          <div class="thumb-code">public class AllTopicActivity extends AppCompatActivity {
+            RecyclerView recyclerView;
+            ArrayList&lt;Topic&gt; list = new ArrayList&lt;&gt;();
+            @Override protected void onCreate(Bundle b) {
+            super.onCreate(b); setContentView(R.layout.activity_all);
+            loadTopics();
+            }
+            void loadTopics() {
+            list.add(new Topic("Splash", R.drawable.splash));
+            list.add(new Topic("Calculator", R.drawable.calc));
+            list.add(new Topic("News", R.drawable.news));
+            }
+            }</div>
+          <span class="proj-emoji">🚀</span>
+        </div>
+
+
+
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-num">01 — FEATURED</span>
+            <span class="proj-lang">Java / Android</span>
+          </div>
+          <div class="proj-title">BMI Calculator — Android App</div>
+          <div class="proj-desc">A simple and intuitive health tracking app that calculates Body Mass Index (BMI) based
+            on user weight and height, featuring instant category classification and user-friendly input validation.
+          </div>
+          <div class="proj-foot">
+            <div class="sk-tags" style="margin-top:0"><span class="tag">Java</span><span class="tag">XML</span><span
+                class="tag">Android Studio</span></div>
+            <a href="https://github.com/nahidmahmudsaron/BMICalculator" class="proj-link" target="_blank">GitHub →</a>
+          </div>
+        </div>
+        </div> 
+
+
+        
+        <div class="proj-card">
+          <div class="proj-thumb t-blue">
+            <div class="thumb-code">function checkGuess(n) {
+              attempts++;
+              if (n===secret) showWin();
+              else if(n&lt;secret) hint="Too low!";
+              else hint="Too high!";
+              }</div>
+            <span class="proj-emoji">🎯</span>
+          </div>
+
+          <div class="proj-body">
+            <div class="proj-meta"><span class="proj-num">02</span><span class="proj-lang">HTML / CSS</span></div>
+            <div class="proj-title">UnlockMyAnswer</div>
+            <div class="proj-desc">A fun and interactive web app created with HTML and CSS to reveal hidden answers,
+              hosted live on Netlify.</div>
+            <div class="proj-foot">
+              <div class="sk-tags" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">Netlify</span></div>
+              <a href="https://github.com/nahidmahmudsaron/UnlockMyAnswer" class="proj-link"
+                target="_blank">UnlockMyAnswer →</a>
+            </div>
+          </div>
+          </div> 
+
+
+          <div class="proj-card">
+            <div class="proj-thumb t-purple">
+              <div class="thumb-code">setInterval(()=>{
+                elapsed++;
+                display.textContent =
+                pad(h)+':'+pad(m)+':'+pad(s);
+                },1000);</div>
+              <span class="proj-emoji">⏱️</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-num">03</span><span class="proj-lang">HTML / CSS / API</span>
+              </div>
+              <div class="proj-title">AuraCut</div>
+              <div class="proj-desc">A fun web tool that removes and changes image backgrounds in real time using an
+                external background removal API.</div>
+              <div class="proj-foot">
+                <div class="sk-tags" style="margin-top:0"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">API</span></div>
+                <a href="https://github.com/nahidmahmudsaron/BackgroundChanger" class="proj-link"
+                  target="_blank">AuraCut →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card wide">
+            <div class="proj-thumb t-teal" style="height:150px">
+              <div class="thumb-code">function calc(a,op,b){
+                return op==='+'?a+b:op==='-'?a-b:op==='*'?a*b:b?a/b:'Err';
+                }</div>
+              <span class="proj-emoji">🧮</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="proj-num">04</span><span class="proj-lang">HTML / CSS / JS</span>
+              </div>
+              <div class="proj-title">Color Palette Generator</div>
+              <div class="proj-desc">A fun web tool that generates harmonious color schemes, helps developers pick
+                palettes, and is deployed live on Netlify.</div>
+              <div class="proj-foot">
+                <div class="sk-tags" style="margin-top:0"><span class="tag">HTML/CSS</span><span
+                    class="tag">JavaScript</span><span class="tag">Netlify</span></div>
+                <a href="https://github.com/nahidmahmudsaron/ColorPlatteGenerator" class="proj-link"
+                  target="_blank">Live Demo →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <!-- ══════════════════ ABOUT ══════════════════ -->
+      <div class="about-sec reveal" id="about">
+        <p class="sec-label">Background</p>
+        <h2 class="sec-title">About Me</h2>
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p>I'm <span class="name-highlight">Nahid Mahmud Saron</span>, a student at Uttara University in Dhaka,
+              Bangladesh. I started learning to code because I wanted to build real things — apps people can actually
+              use.</p>
+            <p>Right now I'm focused on <strong>Android development with Java</strong>, working through a full
+              curriculum while building practice projects that consolidate everything I learn.</p>
+            <p>I believe in learning by doing — every project is a chance to understand something deeper, not just
+              memorize syntax. I document my progress on <strong>GitHub</strong> so future me (and others) can trace the
+              journey.</p>
+
+            <div class="skill-bars">
+              <div class="sb-row">
+                <div class="sb-header"><span class="sb-name">Android Studio/ Java</span><span class="sb-pct">72%</span>
+                </div>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="72"></div>
+                </div>
+              </div>
+              <div class="sb-row">
+                <div class="sb-header"><span class="sb-name">HTML / CSS</span><span class="sb-pct">80%</span></div>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="80"></div>
+                </div>
+              </div>
+              <div class="sb-row">
+                <div class="sb-header"><span class="sb-name">PHP / MySQL</span><span class="sb-pct">55%</span></div>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="55"></div>
+                </div>
+              </div>
+              <div class="sb-row">
+                <div class="sb-header"><span class="sb-name">Git / GitHub / VS Code</span><span
+                    class="sb-pct">65%</span></div>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="t-item">
+              <div class="t-yr">2026 — Now</div>
+              <div class="t-name">Android Developer in Training</div>
+              <div class="t-desc">Building native apps like BMI Calculator, mastering Java, Volley, Glide, Lottie &
+                Git/GitHub.</div>
+            </div>
+            <div class="t-item">
+              <div class="t-yr">2025</div>
+              <div class="t-name">Explored Web Development</div>
+              <div class="t-desc">Built fun web tools like UnlockMyAnswer, AuraCut (API-based), and Color Palette
+                Generator deployed on Netlify.</div>
+            </div>
+            <div class="t-item">
+              <div class="t-yr">2024</div>
+              <div class="t-name">Started at Uttara University</div>
+              <div class="t-desc">Began formal CS studies. Set up Android Studio, wrote first Java programs, fell in
+                love with building things.</div>
+            </div>
+            <div class="t-item">
+              <div class="t-yr">Goal →</div>
+              <div class="t-name">Full-Stack Mobile Developer</div>
+              <div class="t-desc">Master advanced Android concepts, explore Kotlin, Jetpack Compose, and build
+                high-impact applications.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <!-- ══════════════════ CONTACT ══════════════════ -->
+      <div class="contact-sec reveal" id="contact">
+        <div class="contact-inner">
+          <p class="sec-label">Let's connect</p>
+          <h2 class="sec-title">Get In Touch</h2>
+          <p class="contact-sub">I prefer working independently and focusing on deep work. However, if you have a
+            thoughtful question, a project idea, or a professional inquiry, feel free to send a message — I’ll respond
+            as soon as I can.</p>
+          <a href="mailto:nahid.m.saron@gmail.com" class="c-email">
+            <span>✉</span>nahid.m.saron@gmail.com
+          </a>
+          <div class="socials">
+            <a href="https://github.com/nahidmahmudsaron" target="_blank" class="social-btn">⬡ GitHub</a>
+            <a href="#" class="social-btn">in LinkedIn</a>
+            <a href="#" class="social-btn">𝕏 Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <span>✦</span> &nbsp; Designed & built by <span>Nahid Mahmud Saron</span> &nbsp; <span>✦</span> &nbsp; 2026
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
