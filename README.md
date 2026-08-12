@@ -43,7 +43,7 @@
 
 আমি সাধারণত একা কাজ করতে এবং ডিপ ওয়ার্ক (deep work)-এ মনোযোগ দিতে পছন্দ করি। তবে যেকোনো ভালো প্রজেক্ট আইডিয়া, টেকনিক্যাল প্রশ্ন বা কাজের প্রয়োজনে যোগাযোগ করতে পারেন:
 
-- 📧 **Email:** [nahid.m.saron@gmail.com](mailto:nahid.m.saron@gmail.com)
+- 📧 **Email:** [Gmail: Nahid Mahmud Saron](mailto:nahid.m.saron@gmail.com)
 - 🐙 **GitHub:** [Nahid Mahmud Saron](https://github.com/nahidmahmudsaron)
 ---
 ⭐ *If you like this repository, feel free to give it a star!*
