@@ -48,3 +48,15 @@
 
 ---
 ⭐ *If you like this repository, feel free to give it a star!*
+
+---
+
+### © Copyright
+
+This project is owned by **Nahid Mahmud Saron**.
+
+The source code is publicly available for viewing only.
+Copying, modifying, redistributing, or reusing the code
+without permission is not allowed.
+
+© 2026 Nahid Mahmud Saron. All Rights Reserved.
