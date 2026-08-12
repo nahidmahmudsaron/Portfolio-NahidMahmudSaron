@@ -35,7 +35,7 @@
 
 ## 🌐 Live Demo & Repository
 
-- 🔗 **Portfolio Website:** *https://nahidmahmudsaron.netlify.app/*
+- 🔗 **Portfolio Website:** [Nahid Mahmud Saron](https://nahidmahmudsaron.netlify.app/)
 
 ---
 
